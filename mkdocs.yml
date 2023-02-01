@@ -1,0 +1,49 @@
+site_name: My Docs
+site_description: Typer, build great CLIs. Easy to code. Based on Python type hints.
+site_url: https://example.com/
+
+nav:
+    - Home: home.md
+    - About: features.md
+    - user-guide: 
+      - add: user-guide/add.md
+      - remove: user-guide/remove.md
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+repo_name: summand-dev/summand
+repo_url: https://github.com/summand-dev/summand
+edit_uri: ""
+
+markdown_extensions: 
+  - attr_list
+  - md_in_html
+
+plugins:
+  - social:
+      cards_font: Roboto
+
